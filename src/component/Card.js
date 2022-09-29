@@ -1,12 +1,12 @@
 import React from 'react';
-import imgs from '../image/player-1.png';
+// import imgs from '../image/player-1.png';
 const Card = ({ Activities, SelectButton }) => {
 
-    const { name, detail, age, Time } = Activities;
+    const { name, img, detail, age, Time } = Activities;
 
     return (
         <div className="overflow-hidden p-5 rounded-2xl border-solid xl:text-xl lg:text-gl md:text-md sm:text-sm  bg-white text-left ">
-            <img src={imgs} alt='player img' className='w-100 rounded-lg'></img>
+            <img src={img} alt='player img' className='w-100 rounded-lg'></img>
             <h3 className=" text-xl pt-4 font-bold  ">{name}</h3>
             <p className="text-base my-2 text-gray-700">{detail}</p>
             <p className="text-base">For Age: <span className='font-bold'>{age}</span></p>

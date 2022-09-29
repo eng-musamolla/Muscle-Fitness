@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import img from '../image/player-1.png';
+import img from '../image/Ananta Jalil.png';
 import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -39,9 +39,9 @@ const Aside = ({ time }) => {
             <div className='flex gap-5 align-middle'>
                 <img src={img} alt='player' className='w-14 h-14 rounded-full'></img>
 
-                <div className='text-left pt-1'>
-                    <p className='text-base'>Name:</p>
-                    <p >Address:</p>
+                <div className='text-left pt-1 basis-3/4'>
+                    <p className='text-lg font-bold '>Ananta Jalil</p>
+                    <p >🚂 Bangladeshi</p>
                 </div>
             </div>
 

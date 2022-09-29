@@ -1,21 +1,23 @@
 import React from 'react';
 import Logo from '../image/Logo.png';
 import Card from './Card';
-// import Aside from './Aside';
 
 
 const Activities = (props) => {
     const Activitie = [
-        { id: 1, name: "Name-1", img: "../image/player-1.png", detail: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.", age: "25", Time: '15' },
-        { id: 2, name: "Name-2", img: "../image/player-2.png", detail: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.", age: "45", Time: '25' },
-        { id: 3, name: "Name-3", img: "../image/player-3.png", detail: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.", age: "35", Time: '35' },
-        { id: 4, name: "Name-4", img: "../image/player-4.png", detail: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.", age: "60", Time: '45' },
-        { id: 5, name: "Name-5", img: "../image/player-5.png", detail: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.", age: "75", Time: '60' },
-        { id: 6, name: "Name-6", img: "../image/player-6.png", detail: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.", age: "28", Time: '45' },
-        { id: 7, name: "Name-7", img: "../image/player-7.png", detail: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.", age: "22", Time: '35' },
-        { id: 8, name: "Name-8", img: "../image/player-8.png", detail: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.", age: "8", Time: '30' },
-        { id: 9, name: "Name-9", img: "../image/player-9.png", detail: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.", age: "35", Time: '45' }
+        { id: 1, name: "Squats", img: "../image/Squats.png", detail: "Squats are undoubtedly the best exercise for gaining weight. This exercise is considered important for increasing the strength and size of the lower body muscles.", age: "25", Time: '15' },
+        { id: 2, name: "Push-ups", img: "../image/Push-ups.png", detail: "Push-ups are a perfect exercise to build both your upper body and core strength. It is a difficult yet effective exercise to gain bodyweight.", age: "45", Time: '25' },
+        { id: 3, name: "Bench Dips", img: "../image/Bench Dips.png", detail: "Bench Dips are simple yet useful exercises to gain body weight.  This exercise mainly targets the triceps but it also focuses on your chest and the front part of your shoulder.", age: "35", Time: '35' },
+        { id: 4, name: "Lunges", img: "../image/Lunges.png", detail: "Just like squats, lunges also help in building the lower body. It helps in bulking up the thighs and hip muscles. ", age: "60", Time: '45' },
+        { id: 5, name: "Crunches", img: "../image/Crunches.png", detail: "It is usually believed that crunches help in losing belly fat but crunches also help in increasing your core strength and gain weight.", age: "75", Time: '60' },
+        { id: 6, name: "Glute Kickback", img: "../image/Glute Kickback.png", detail: "Glute kickbacks mainly benefit your gluteal muscles.It also targets your hamstrings and strengthens your buttocks.", age: "28", Time: '45' },
+        { id: 7, name: "Pull-Ups", img: "../image/Pull-Ups.png", detail: "Pull-ups are one the most effective exercises for gaining weight. Pull-ups help in getting chiseled shoulders and ripped arms.", age: "22", Time: '35' },
+        { id: 8, name: "Bench Press", img: "../image/Bench Press.png", detail: "Bench presses are great for bulking up. This exercise helps in building shoulders, chest muscles, and triceps.", age: "8", Time: '30' },
+        { id: 9, name: "Deadlift", img: "../image/Deadlift.png", detail: "The Deadlift is not only a wonderful exercise to gain body weight, but It is also great to increase the overall muscle mass in your body.", age: "35", Time: '45' }
     ];
+
+
+
 
 
     return (
