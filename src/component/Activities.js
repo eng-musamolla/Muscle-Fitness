@@ -1,93 +1,26 @@
 import React from 'react';
-import img from '../image/player-1.png';
+import Logo from '../image/Logo.png';
+import Card from './Card';
 
 const Activities = () => {
     return (
         <div>
-            <div className=" grid grid-cols-3 gap-10 px-24">
-                <div className="overflow-hidden p-5 rounded-2xl border-solid   bg-white text-left ">
-                    <img src={img} alt='player' className='w-100 rounded-lg'></img>
-                    <h3 className=" text-xl pt-4 font-bold  ">Name-1</h3>
-                    <p className="text-base my-2 text-gray-700">Amet minim mollit non deserunt
-                        ullamco est sit aliqua dolor do
-                        amet sint.
-                    </p>
-                    <p className="text-base">For Age: <span className='font-bold'>10-15</span></p>
+            <div className='px-24 pt-10'>
+                <img src={Logo} alt='player' className='w-48'></img>
+                <h3 className='text-left text-2xl font-bold my-4'>
+                    Select today’s exercise
+                </h3>
+            </div>
+            <div className=" grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 xl:gap-10 md:gap-10 sm:gap-10 xl:px-24 md:px-24 sm:px-14">
 
-                    <p className="text-base">Time required: <span className='font-bold'>20 minutes</span></p>
-                    <button className=" hover:bg-violet-600 rounded-lg py-2 text-lg bg-green-500 mt-5 w-full text-white font-semibold"
-                        type="submit">SELECT</button>
-                </div>
+                <Card></Card>
+                <Card></Card>
+                <Card></Card>
+                <Card></Card>
+                <Card></Card>
+                <Card></Card>
 
-                <div className="overflow-hidden p-5 rounded-2xl border-solid   bg-white text-left ">
-                    <img src={img} alt='player' className='w-100 rounded-lg'></img>
-                    <h3 className=" text-xl pt-4 font-bold  ">Name-1</h3>
-                    <p className="text-base my-2 text-gray-700">Amet minim mollit non deserunt
-                        ullamco est sit aliqua dolor do
-                        amet sint.
-                    </p>
-                    <p className="text-base">For Age: <span className='font-bold'>10-15</span></p>
 
-                    <p className="text-base">Time required: <span className='font-bold'>20 minutes</span></p>
-                    <button className=" hover:bg-violet-600 rounded-lg py-2 text-lg bg-green-500 mt-5 w-full text-white font-semibold"
-                        type="submit">SELECT</button>
-                </div>
-
-                <div className="overflow-hidden p-5 rounded-2xl border-solid   bg-white text-left ">
-                    <img src={img} alt='player' className='w-100 rounded-lg'></img>
-                    <h3 className=" text-xl pt-4 font-bold  ">Name-1</h3>
-                    <p className="text-base my-2 text-gray-700">Amet minim mollit non deserunt
-                        ullamco est sit aliqua dolor do
-                        amet sint.
-                    </p>
-                    <p className="text-base">For Age: <span className='font-bold'>10-15</span></p>
-
-                    <p className="text-base">Time required: <span className='font-bold'>20 minutes</span></p>
-                    <button className=" hover:bg-violet-600 rounded-lg py-2 text-lg bg-green-500 mt-5 w-full text-white font-semibold"
-                        type="submit">SELECT</button>
-                </div>
-
-                <div className="overflow-hidden p-5 rounded-2xl border-solid   bg-white text-left ">
-                    <img src={img} alt='player' className='w-100 rounded-lg'></img>
-                    <h3 className=" text-xl pt-4 font-bold  ">Name-1</h3>
-                    <p className="text-base my-2 text-gray-700">Amet minim mollit non deserunt
-                        ullamco est sit aliqua dolor do
-                        amet sint.
-                    </p>
-                    <p className="text-base">For Age: <span className='font-bold'>10-15</span></p>
-
-                    <p className="text-base">Time required: <span className='font-bold'>20 minutes</span></p>
-                    <button className=" hover:bg-violet-600 rounded-lg py-2 text-lg bg-green-500 mt-5 w-full text-white font-semibold"
-                        type="submit">SELECT</button>
-                </div>
-
-                <div className="overflow-hidden p-5 rounded-2xl border-solid   bg-white text-left ">
-                    <img src={img} alt='player' className='w-100 rounded-lg'></img>
-                    <h3 className=" text-xl pt-4 font-bold  ">Name-1</h3>
-                    <p className="text-base my-2 text-gray-700">Amet minim mollit non deserunt
-                        ullamco est sit aliqua dolor do
-                        amet sint.
-                    </p>
-                    <p className="text-base">For Age: <span className='font-bold'>10-15</span></p>
-
-                    <p className="text-base">Time required: <span className='font-bold'>20 minutes</span></p>
-                    <button className=" hover:bg-violet-600 rounded-lg py-2 text-lg bg-green-500 mt-5 w-full text-white font-semibold"
-                        type="submit">SELECT</button>
-                </div>
-
-                <div className="overflow-hidden p-5 rounded-2xl border-solid   bg-white text-left ">
-                    <img src={img} alt='player' className='w-100 rounded-lg'></img>
-                    <h3 className=" text-xl pt-4 font-bold  ">Name-1</h3>
-                    <p className="text-base my-2 text-gray-700">Amet minim mollit non deserunt
-                        ullamco est sit aliqua dolor do
-                        amet sint.
-                    </p>
-                    <p className="text-base">For Age: <span className='font-bold'>10-15</span></p>
-
-                    <p className="text-base">Time required: <span className='font-bold'>20 minutes</span></p>
-                    <button className=" hover:bg-violet-600 rounded-lg py-2 text-lg bg-green-500 mt-5 w-full text-white font-semibold"
-                        type="submit">SELECT</button>
-                </div>
 
 
             </div>
