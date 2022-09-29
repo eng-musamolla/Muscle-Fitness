@@ -11,7 +11,7 @@ const Body = () => {
     const SelectButton = (Activities) => {
         const { Time } = Activities;
         const ExerciseTime = parseInt(Time);
-        const newTime = (time) + ExerciseTime;
+        const newTime = time + ExerciseTime;
         setTime(newTime);
 
     }

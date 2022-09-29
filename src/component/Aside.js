@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import img from '../image/player-1.png';
 import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Aside = ({ time }) => {
@@ -21,7 +23,15 @@ const Aside = ({ time }) => {
         }
     }, [Time])
 
-
+    const notify = () => toast.success('🦄 Wow so easy!', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+    });
 
     return (
         <div className='bg-white p-6'>
@@ -93,11 +103,11 @@ const Aside = ({ time }) => {
                 </div>
             </div>
 
-            <button className=" hover:bg-orange-500 rounded-lg py-4 text-lg bg-slate-700 mt-5 w-full text-white font-semibold"
+            <button onClick={notify} className=" hover:bg-orange-500 rounded-lg py-4 text-lg bg-slate-700 mt-5 w-full text-white font-semibold"
                 type="submit">Activity Completed</button>
 
 
-
+            <ToastContainer />
         </div>
     );
 };
