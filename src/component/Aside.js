@@ -3,15 +3,10 @@ import img from '../image/player-1.png';
 import { useState } from 'react';
 
 
+const Aside = ({ time }) => {
+    const ExerciseTime = time;
+    console.log(ExerciseTime);
 
-
-
-
-
-
-
-
-const Aside = () => {
 
 
     const [Time, setTime] = useState(0);
@@ -41,7 +36,6 @@ const Aside = () => {
                 </div>
             </div>
 
-            {/* User profile */}
             <div className='grid grid-flow-col   my-6 p-3 bg-slate-200 rounded-lg'>
                 <div>
                     <p className='text-base'><span className='text-xl font-bold'>66</span>kg</p>
@@ -88,7 +82,7 @@ const Aside = () => {
             <div className='my-6 p-3  bg-slate-200 rounded-lg'>
                 <div className='flex justify-between px-5' >
                     <p className='font-semibold text-md'>Exercise time</p>
-                    <p className='font-semibold text-md text-slate-400'>200 seconds</p>
+                    <p className='font-semibold text-md text-slate-400'>{ExerciseTime} Minutes</p>
                 </div>
             </div>
 
