@@ -1,35 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import img from '../image/player-1.png';
 import { useState } from 'react';
 
+
+
+
+
+
+
+
+
+
 const Aside = () => {
-
-    // const TimeBlock = () => {
-
-    //     const Times = [15, 30, 45, 60];
-    //     Times.map((time) => {
-    //         console.log(time);
-
-    //         <div className='bg-white hover:bg-orange-500 hover:text-white w-10 h-10 rounded-full align-middle leading-none' >
-    //             <button className='pt-3 font-semibold text-md'><span>{time}</span>s</button>
-    //         </div>
-    //         return (
-    //             time
-    //         )
-    //     }
-    //     );
-    // }
-
-
-
 
 
     const [Time, setTime] = useState(0);
-    const Break = (time) => {
-        setTime(time);
-
+    const Break = (breakTime) => {
+        setTime(breakTime);
+        localStorage.setItem('breakTime', breakTime);
 
     }
+    useEffect(() => {
+        if (localStorage.getItem('breakTime')) {
+            setTime(localStorage.getItem('breakTime'));
+        }
+    }, [Time])
+
+
+
     return (
         <div className='bg-white p-6'>
             {/* User profile */}
