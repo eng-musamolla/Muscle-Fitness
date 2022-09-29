@@ -5,7 +5,7 @@ const Card = ({ Activities, SelectButton }) => {
     const { name, detail, age, Time } = Activities;
 
     return (
-        <div className="overflow-hidden p-5 rounded-2xl border-solid   bg-white text-left ">
+        <div className="overflow-hidden p-5 rounded-2xl border-solid xl:text-xl lg:text-gl md:text-md sm:text-sm  bg-white text-left ">
             <img src={imgs} alt='player img' className='w-100 rounded-lg'></img>
             <h3 className=" text-xl pt-4 font-bold  ">{name}</h3>
             <p className="text-base my-2 text-gray-700">{detail}</p>
